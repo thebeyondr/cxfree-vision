@@ -4,23 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>cxFree - Free CXC/CAPE Past Papers</title>
+    <title>cxFree | Free CXC/CAPE Past Papers</title>
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700" rel="stylesheet"> 
-    <link rel="stylesheet" href="/resources/css/style.css">
+    <link rel="stylesheet" href="vendors/css/normalize.css">
+    <link rel="stylesheet" href="vendors/css/grid.css">
+    <link rel="stylesheet" href="resources/css/style.css">
 </head>
 <body>
     <div class="header">
-        <nav class="header__navigation">
-            <h1 class="header__logo-text">cxFree</h1>
-        </nav>
-        <h1 class="header__masthead">
-            <span>Caribbean past papers</span>
-            <span> Free. Forever.</span>
-        </h1>
-
-        <a href="#">See Repo</a>
-        
+        <div class="row">
+            <nav class="header__navigation">
+                <h1 class="header__logo-text">cxFree</h1>
+            </nav>
+            <div class="header__text-box">
+                <h1 class="header__heading">
+                    <span class="header__heading-primary">Caribbean past papers</span>
+                    <span class="header__heading-secondary"> Free. Forever.</span>
+                </h1>
+                <a href="#" class="btn header__btn--blue">View Repository</a>
+                <a href="#" class="btn header__btn--coral">Submit an exam</a>
+            </div> 
+        </div>
     </div>
+    <section class="exams">
+        <div class="row">
+            <div class="col span-1-of-2 exams__exam">
+                <h2 class="exam__title">CAPE</h2>
+
+                <h3 class="exam__subject">Pure Mathematics</h3>
+                <div class="exam__subject-papers">
+                    <a href="./cape/pure_math/June2009.pdf">June 2009</a>
+                    <a href="./cape/pure_math/June2010.pdf">June 2010</a>
+                    <a href="./cape/pure_math/June2011.pdf">June 2011</a>
+                    <a href="./cape/pure_math/June2012.pdf">June 2012</a>
+                    <a href="./cape/pure_math/June2013.pdf">June 2013</a>
+                    <a href="./cape/pure_math/June2014.pdf">June 2014</a>
+                    <a href="./cape/pure_math/June2015.pdf">June 2015</a>
+                  </div>
+
+                <h3 class="exam__subject">Physics</h3>
+                <div class="exam__subject-papers">
+                    <a href="./cape/physics/unit2/may2009.pdf">May 2010</a>
+                </div>
+                    
+                <h3 class="exam__subject">Economics</h3>
+                <div class="exam__subject-papers">
+                    <a href="./cape/economics/june2005Paper2.pdf">June 2005</a>
+                    <a href="./cape/economics/june2006Paper2.pdf">June 2006</a>
+                    <a href="./cape/economics/june2007Paper2.pdf">June 2007</a>
+                    <a href="./cape/economics/june2008Paper2.pdf">June 2008</a>
+                    <a href="./cape/economics/june2009Paper2.pdf">June 2009</a>
+                    <a href="./cape/economics/june2010Paper2.pdf">June 2010</a>
+                    <a href="./cape/economics/june2011Paper2.pdf">June 2011</a>
+                    <a href="./cape/economics/june2012Paper2.pdf">June 2012</a>
+                    <a href="./cape/economics/june2013Paper2.pdf">June 2013</a>
+                    <a href="./cape/economics/june2015Paper2.pdf">June 2015</a>
+                    <a href="./cape/economics/june2016Paper2.pdf">June 2016</a>
+                </div>
+            </div>
+            <div class="col span-1-of-2 exams__exam">
+                <h2 class="exam__title">CSEC/CXC</h2>
+                <h3 class="exam__subject">Mathematics</h3>
+                <div class="exam__subject-papers">
+                    <a href="./csec/mathematics/may2010.pdf">May 2010</a>
+                      <a href="./csec/mathematics/may2011.pdf">May 2011</a>
+                      <a href="./csec/mathematics/may2012.pdf">May 2012</a>
+                      <a href="./csec/mathematics/may2013.pdf">May 2013</a>
+                      <a href="./csec/mathematics/may2014.pdf">May 2014</a>
+                      <a href="./csec/mathematics/may2016.pdf">May 2016</a>
+                      <a href="./csec/mathematics/may2017.pdf">May 2017</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="row">
+            <p>
+                Copyright &copy; 2017 by cxFree. All rights reserved.
+            </p>
+        </div>
+    </footer>
     
 </body>
 </html>

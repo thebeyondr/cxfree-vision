@@ -1,12 +1,153 @@
-*{
-    margin: 0;
-    padding: 0;
+*,
+*::after,
+*::before{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+    text-rendering: optimizeLegibility;
 }
 
 body{
     box-sizing: border-box;
     font-family: 'Raleway', 'Arial Narrow', Arial, sans-serif;
     font-weight: 400;
-    font-size: 0.625%;
+    color: #444;
+    font-size: 1.6rem;
+    line-height: 1.8;
+}
+
+.header{
+    background-image: linear-gradient(rgba(50, 50, 50, 0.8), rgba(25, 25, 25, 0.8)), url('/resources/css/img/classroom.jpg');
+    height: 70vh;
+    width: auto;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-size: cover;
+    color: #eee;
+}
+
+
+.header__logo-text{
+    font-weight: 700;
+    padding-top: 0.5em;
+    font-size: 150%;
+}
+
+.header__text-box{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.header__heading-primary{
+    font-size: 6rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    display: block;
+    margin: 0 auto;
+    letter-spacing: .09em;
+}
+
+.header__heading-secondary{
+    display: block;
+    font-size: 3rem;
+    line-height: 1.5rem;
+    margin-bottom: 1.5em;
+}
+
+a:link,
+a:visited{
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn:link,
+.btn:visited{
+    padding: 1.2rem 5rem;
+    color: #eee;
+    /* text-transform: uppercase; */
+    border-radius: 10rem;
+    transition: all 0.2s ease-in-out;
+    margin-top: 0.1rem;
+    margin-left: 0.5em;
+}
+
+.header__btn--blue:link,
+.header__btn--blue:visited{
+    background-color: #009ee5;
+}
+
+.header__btn--coral:link,
+.header__btn--coral:visited{
+    background-color: lightcoral;
+}
+
+
+.btn:hover,
+.btn:active{
+    background-color: #0488c5;
+}
+
+.header__btn--coral:hover,
+.header__btn--coral:active{
+    background-color: rgb(216, 86, 86);
+}
+
+.exams{
+    background-color: #eee;
+    padding: 2em;
+}
+
+.row{
+    max-width: 95vw;
+    height: auto;
+    margin: 0 auto;
+}
+
+.exams__exam{
+    padding: 2em;
+    background-color: #fff;
+}
+
+.exam__title{
+    font-weight: 700;
+    font-size: 4rem;
+    text-align: center;
+    border-bottom: 1px solid lightgrey;
+}
+
+.exam__subject{
+    font-size: 120%;
+    margin-top: 1em;
+}
+
+.exam__subject-papers a:link,
+.exam__subject-papers a:visited{
     color: #333;
+    border-bottom: #009ee5 3px solid;
+    line-height: 1.8em;
+    margin-left: 0.4em;
+    transition: all 0.2s ease-in-out;
+}
+
+.exam__subject-papers a:first-child{
+    margin-left: 0px;
+}
+
+.exam__subject-papers a:hover,
+.exam__subject-papers a:active{
+    border-bottom: rgb(216, 86, 86) 3px solid;
+}
+
+footer{
+    background-color: rgb(216, 86, 86);
+    padding: 1em 2em;
+    color: #fff;
+    text-align: center;
 }
