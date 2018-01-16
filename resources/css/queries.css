@@ -1,0 +1,45 @@
+@media only screen and (max-width:1710px) { 
+    .header__heading-primary{
+        font-size: 5rem;
+    }
+}
+
+@media only screen and (max-width:1423px) { 
+    html{
+        font-size: 50.5%;
+    }
+
+    .header{
+        height: 60vh;
+    }
+
+    .header__text-box{
+        top: 30%;
+    }
+
+    .header__heading-primary{
+        font-size: 4.5rem;
+    }
+}
+
+@media only screen and (max-width:479px) { 
+    .header{
+        height: 70vh;
+    }
+
+    .btn:link,
+    .btn:visited{
+        display:block; 
+        margin-bottom: 1rem;
+        width: auto;
+    }
+
+    .header__text-box{
+        top: 40%;
+    }
+
+    .header__heading-primary{
+        font-size: 3rem;
+    }
+}
+
